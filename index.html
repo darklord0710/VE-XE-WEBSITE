@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đại Lý Vé Xe</title>
+    <link rel="shortcut icon" type="image/png" href="./IMG/car-icon.png "/>
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Link fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+
+            <a href="./index.html" class="logo"><img src="./IMG/car-icon.png" alt="#" width="50px"></a>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+
+            <nav class="navbar">
+                <a class="btn active" id="home" href="./index.html">Trang chủ</a>
+                <a class="btn" id="price" href="#price">Bảng giá</a>
+                <a class="btn" id="office" href="#office">Văn phòng</a>
+                <a class="btn" id="popular" href="#popular">Tuyến xe</a>
+                <a class="btn" id="service" href="#service">Dịch vụ</a>
+                <a class="btn" id="news" href="#news">Tin tức</a>
+                <a class="btn" id="contact" href="#contact">Liên hệ</a>
+                <a class="btn" id="recruit" href="#recruit">Tuyển dụng</a>
+            </nav>
+
+        </header>
+
+        <section class="home">
+            <div class="intro">
+                <img id="img" src="/IMG/car_img.jpg" width="100%" height="100%">
+            </div>
+            <!-- Booking Ticket -->
+            <div class="header-intro"> Đặt vé ngay ! </div>
+            <div class="booking-container">
+                <div class="main-spacing">
+                    <div class="booking-container-booking_ticket">
+                        <div class="booking-day">
+                            <h3 class="header-items"> Ngày khởi hành </h3>
+                            <form id="formbooking">
+                                <input type="date" class="input-day">
+                            </form>
+                        </div>
+                        <div class="booking-start">
+                            <h3 class="header-items"> Nơi đi </h3>
+                            <form id="formbooking" name="booking-start">
+                                <select id="booking" class="select-start">
+                                <option value="choose">Chọn điểm đi</option>
+                                <optgroup label="Ngoài bến xe">
+                                <option value="Vũng Tàu">Vũng Tàu </option>
+                                <option value="Bà Rịa">Bà Rịa</option>
+                                <option value="Q1-HCM">Q1-HCM</option>
+                                <option value="Gò Vấp-HCM">Gò Vấp-HCM</option>
+                                <option value="Sân bay">Sân bay</option>
+                                </optgroup>
+                                <optgroup label="Trong bến xe :">
+                                <option value="audi">BX.miền Đông(cũ)</option>
+                                <option value="audi">BX.miền Đông(mới)</option>
+                                <option value="audi">BX.miền Tây</option>
+                            </optgroup>
+                            
+                            </select>
+                            </form>
+                        </div>
+                        <div class="booking-end">
+                            <h3 class="header-items"> Nơi đến </h3>
+                            <form id="formbooking" name="booking-end">
+                                <select id="booking" class="select-end">
+                                <option value="choose">Chọn điểm đến</option>
+                                <optgroup label="Ngoài bến xe">
+                                    <option value="Vũng Tàu">Vũng Tàu </option>
+                                    <option value="Bà Rịa">Bà Rịa</option>
+                                    <option value="Q1-HCM">Q1-HCM</option>
+                                    <option value="Gò Vấp-HCM">Gò Vấp-HCM</option>
+                                    <option value="Sân bay">Sân bay</option>
+                                </optgroup>
+                                <optgroup label="Trong bến xe :">
+                                    <option value="audi">BX.miền Đông(cũ)</option>
+                                    <option value="audi">BX.miền Đông(mới)</option>
+                                    <option value="audi">BX.miền Tây</option>
+                                </optgroup>
+                                
+                                </select>
+                            </form>
+                        </div>
+                        <div class="booking-time">
+                            <h3 class="header-items"> Giờ khởi hành </h3>
+                            <form id="formbooking">
+                                <select id="booking" class="select-time">
+                                    <option value="choose">Chọn giờ đi</option>
+                                    <option value="05:00">05:00</option>
+                                    <option value="05:30">05:30</option>
+                                    <option value="06:00">06:00</option>
+                                    <option value="06:30">06:30</option>
+                                    <option value="07:00">07:00</option>
+                                    <option value="07:30">07:30</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="08:30">08:30</option>
+                                    <option value="09:00">09:00</option>
+                                    <option value="09:30">09:30</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="10:30">10:30</option>
+                                    <option value="11:00">11:00</option>
+                                    <option value="11:30">11:30</option>
+                                    <option value="12:00">12:00</option>
+                                    <option value="12:30">12:30</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="15:30">15:30</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="16:30">16:30</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="booking-container-submit">
+                        <input type="button" value="TÌM VÉ XE" class="booking-container-submit_button">
+                    </div>
+                </div>
+            </div>
+            <!-- Hotline -->
+            <div class="header-intro" id="hotline"> HOTLINE</div>
+            <div class="hotline-booking-container">
+                <div class="main-spacing">
+                    <div class="hotline-booking-wrap">
+                        <div class="hotline-booking-items">
+                            <p>Trường hợp quý khách không tìm được vé theo mong muốn - Xin vui lòng liên hệ Hotline sau: </p>
+                        </div>
+                        <div class="hotline-booking-items">
+                            <div class="hotline_tel">
+                                <div>0256 477 477</div>
+                                <div>
+                                    <span><i class="fa-solid fa-phone"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular">
+            <div class="header-intro" id="hotline"> TUYẾN XE PHỔ BIẾN </div>
+            <div class="popular-traveling-container">
+                <div class="main-spacing">
+                    <div class="popular-traveling-wrap">
+                        <div class="popular-traveling-container-items ">
+                            <div class="popular-traveling-sidebar">
+                                <div class="popular-traveling-img">
+                                    <img src="./IMG/map_1.png" width="100%" height="100%">
+                                </div>
+                                <div class="popular-traveling-container-items-slide">
+                                    <div class="popular-traveling-container-items-slide-text"> Thông tin bổ sung :</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Khoảng cách di chuyển : 100km</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Thời gian dự kiến : 1h40p</div>
+                                    <div class="popular-traveling-container-items-slide-text">
+                                        <b><u>Lưu ý</u>:</b> <i>Xe khách Hoa Mai phục vụ trung chuyển miễn phí nội thành tạI Tp.Vũng Tàu</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-traveling-infor">
+                                <div class="popular-traveling-infor-head">
+                                    <div>Tp.Vũng Tàu - Quận 1 (HCM)</div>
+                                    <div>Giờ khởi hành: <span>30 phút/1 chuyến từ 04h30 đến 18h00</span></div>
+                                </div>
+                                <div class="popular-traveling-infor-body">
+                                    <div class="ticket">
+                                        <div>Loại xe: </div>
+                                        <div>VIP Limousine</div>
+                                        <div>Giá vé: </div>
+                                        <div>210 000đ</div>
+                                    </div>
+                                </div>
+                                <div class="popular-traveling-infor-foot">
+                                    <p>Hotline:</p>
+                                    <ul class="hotline-list">
+                                        <li>0889 200 200</li>
+                                        <li>0963 200 200</li>
+                                        <li>0901 200 200</li>
+                                        <li>02543 833 333</li>
+                                        <li>02543 515 200</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-traveling-container-items ">
+                            <div class="popular-traveling-sidebar">
+                                <div class="popular-traveling-img">
+                                    <img src="./IMG/map_1.png" width="100%" height="100%">
+                                </div>
+                                <div class="popular-traveling-container-items-slide">
+                                    <div class="popular-traveling-container-items-slide-text"> Thông tin bổ sung :</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Khoảng cách di chuyển : 120km</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Thời gian dự kiến : 2h</div>
+                                    <div class="popular-traveling-container-items-slide-text">
+                                        <b><u>Lưu ý</u>:</b> <i>Xe khách Hoa Mai phục vụ trung chuyển miễn phí nội thành tạI Tp.Vũng Tàu</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-traveling-infor">
+                                <div class="popular-traveling-infor-head">
+                                    <div>Tp.Vũng Tàu - BX Miền Tây</div>
+                                    <div>Giờ khởi hành: <span>30 phút/1 chuyến từ 05h00 đến 17h30</span></div>
+                                </div>
+                                <div class="popular-traveling-infor-body">
+                                    <div class="ticket">
+                                        <div>Loại xe: </div>
+                                        <div>Xe thường</div>
+                                        <div>Giá vé: </div>
+                                        <div>160 000đ</div>
+                                    </div>
+                                </div>
+                                <div class="popular-traveling-infor-foot">
+                                    <p>Hotline:</p>
+                                    <ul class="hotline-list">
+                                        <li>0889 200 200</li>
+                                        <li>0909 200 200</li>
+                                        <li>0901 200 200</li>
+                                        <li>02543 833 333</li>
+                                        <li>02543 515 200</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-traveling-container-items ">
+                            <div class="popular-traveling-sidebar">
+                                <div class="popular-traveling-img">
+                                    <img src="./IMG/map_1.png" width="100%" height="100%">
+                                </div>
+                                <div class="popular-traveling-container-items-slide">
+                                    <div class="popular-traveling-container-items-slide-text"> Thông tin bổ sung :</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Khoảng cách di chuyển : 110km</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Thời gian dự kiến : 2h</div>
+                                    <div class="popular-traveling-container-items-slide-text">
+                                        <b><u>Lưu ý</u>:</b> <i>Xe khách Hoa Mai phục vụ trung chuyển miễn phí nội thành tạI Tp.Vũng Tàu</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-traveling-infor">
+                                <div class="popular-traveling-infor-head">
+                                    <div>Tp.Vũng Tàu - BX Miền Đông</div>
+                                    <div>Giờ khởi hành: <span>30 phút/1 chuyến từ 04h00 đến 17h30</span></div>
+                                </div>
+                                <div class="popular-traveling-infor-body">
+                                    <div class="ticket">
+                                        <div>Loại xe: </div>
+                                        <div>Chất lượng cao 10 chỗ</div>
+                                        <div>Giá vé: </div>
+                                        <div>170 000đ</div>
+                                    </div>
+                                </div>
+                                <div class="popular-traveling-infor-foot">
+                                    <p>Hotline:</p>
+                                    <ul class="hotline-list">
+                                        <li>0889 200 200</li>
+                                        <li>0909 200 200</li>
+                                        <li>02543 527 500</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-traveling-container-items ">
+                            <div class="popular-traveling-sidebar">
+                                <div class="popular-traveling-img">
+                                    <img src="./IMG/map_1.png" width="100%" height="100%">
+                                </div>
+                                <div class="popular-traveling-container-items-slide">
+                                    <div class="popular-traveling-container-items-slide-text"> Thông tin bổ sung :</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Khoảng cách di chuyển : 100km</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Thời gian dự kiến : 2h</div>
+                                    <div class="popular-traveling-container-items-slide-text">
+                                        <b><u>Lưu ý</u>:</b> <i>Xe khách Hoa Mai phục vụ trung chuyển miễn phí nội thành tạI Tp.Vũng Tàu</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-traveling-infor">
+                                <div class="popular-traveling-infor-head">
+                                    <div>Long Hải - Hồ Chí Minh</div>
+                                    <div>Giờ khởi hành: <span>30 phút/1 chuyến từ 05h00 đến 17h00</span></div>
+                                </div>
+                                <div class="popular-traveling-infor-body">
+                                    <div class="ticket">
+                                        <div>Loại xe: </div>
+                                        <div>VIP Limousine</div>
+                                        <div>Giá vé: </div>
+                                        <div>210 000đ</div>
+                                    </div>
+                                </div>
+                                <div class="popular-traveling-infor-foot">
+                                    <p>Hotline:</p>
+                                    <ul class="hotline-list">
+                                        <li>0889 200 200</li>
+                                        <li>0901 200 200</li>
+                                        <li>02543 661 661</li>
+                                        <li>02543 661 662</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-traveling-container-items ">
+                            <div class="popular-traveling-sidebar">
+                                <div class="popular-traveling-img">
+                                    <img src="./IMG/map_1.png" width="100%" height="100%">
+                                </div>
+                                <div class="popular-traveling-container-items-slide">
+                                    <div class="popular-traveling-container-items-slide-text"> Thông tin bổ sung :</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Khoảng cách di chuyển : 120km</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Thời gian dự kiến : 1h40p</div>
+                                    <div class="popular-traveling-container-items-slide-text">
+                                        <b><u>Lưu ý</u>:</b> <i>Xe khách Hoa Mai phục vụ trung chuyển miễn phí nội thành tạI Tp.Vũng Tàu</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-traveling-infor">
+                                <div class="popular-traveling-infor-head">
+                                    <div>Sân bay Tân Sơn Nhất - Tp.Vũng Tàu</div>
+                                    <div>Giờ khởi hành: <span>30 phút/1 chuyến từ 7h00 đến 18h00</span></div>
+                                </div>
+                                <div class="popular-traveling-infor-body">
+                                    <div class="ticket">
+                                        <div>Loại vé: </div>
+                                        <div>VIP Limousine</div>
+                                        <div>Giá vé: </div>
+                                        <div>210 000đ</div>
+                                    </div>
+                                </div>
+                                <div class="popular-traveling-infor-foot">
+                                    <p>Hotline:</p>
+                                    <ul class="hotline-list">
+                                        <li>0889 200 200</li>
+                                        <li>0939 200 200</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popular-traveling-container-items ">
+                            <div class="popular-traveling-sidebar">
+                                <div class="popular-traveling-img">
+                                    <img src="./IMG/map_1.png" width="100%" height="100%">
+                                </div>
+                                <div class="popular-traveling-container-items-slide">
+                                    <div class="popular-traveling-container-items-slide-text"> Thông tin bổ sung :</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Khoảng cách di chuyển : 88km</div>
+                                    <div class="popular-traveling-container-items-slide-text"> Thời gian dự kiến : 1h40p</div>
+                                    <div class="popular-traveling-container-items-slide-text">
+                                        <b><u>Lưu ý</u>:</b> <i>Xe khách Hoa Mai phục vụ trung chuyển miễn phí nội thành tạI Tp.Vũng Tàu</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popular-traveling-infor">
+                                <div class="popular-traveling-infor-head">
+                                    <div>Quận 5 (HCM) - Tp.Vũng Tàu</div>
+                                    <div>Giờ khởi hành: <span>30 phút/1 chuyến từ 06h30 đến 18h00</span></div>
+                                </div>
+                                <div class="popular-traveling-infor-body">
+                                    <div class="ticket">
+                                        <div>Loại xe: </div>
+                                        <div>VIP Limousine</div>
+                                        <div>Giá vé: </div>
+                                        <div>210 000đ</div>
+                                    </div>
+                                </div>
+                                <div class="popular-traveling-infor-foot">
+                                    <p>Hotline:</p>
+                                    <ul class="hotline-list">
+                                        <li>0889 200 200</li>
+                                        <li>0889 50 6262</li>
+                                        <li>0889 51 6262</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recruit">
+            <div class="header-intro" id="hotline">Tuyển dụng</div>
+            <div class="recruit_container">
+                <div class="main-spacing">
+                    <div class="recruit_wrap">
+                        <a class="recruit_items" href="#tuyen-nhan-vien-lai-xe">
+                            <div class="recruit_img">
+                                <img src="./IMG/driver_staff.jpg" class="recruit_img" alt="">
+                            </div>
+                            <div class="recruit_pos">
+                                <p>Nhân viên lái xe</p>
+                            </div>
+                        </a>
+                        <a class="recruit_items" href="#tuyen-nhan-vien-dieu-phoi">
+                            <div class="recruit_img">
+                                <img src="./IMG/operator_staff.jpg" class="recruit_img" alt="">
+                            </div>
+                            <div class="recruit_pos">
+                                <p>Nhân viên điều phối</p>
+                            </div>
+                        </a>
+                        <a class="recruit_items" href="#tuyen-nhan-vien-truc-tong-dai">
+                            <div class="recruit_img">
+                                <img src="./IMG/tel_staff.jpg" class="recruit_img" alt="">
+                            </div>
+                            <div class="recruit_pos">
+                                <p>Nhân viên trực tổng đài</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="recruit_wrap_2">
+                        <div class="recruit_info drive_staff">
+                            <div class="recruit_info_title">
+                                <h2>VỊ TRÍ: NHÂN VIÊN LÁI XE</h2>
+                                <h3>SỐ LƯỢNG: 05 NGƯỜI</h3>
+                            </div>
+                            <div class="recruit_info_content">
+                                <div>
+                                    <h3>YÊU CẦU:</h3>
+                                    <ul fix>
+                                        <li>+ Nam, trên 25 tuổi</li>
+                                        <li>+ Kĩ năng giao tiếp tốt, biết Tiếng Anh giao tiếp căn bản.</li>
+                                        <li>+ Siêng năng, rành đường SG-VT, kinh nghiệm 3 năm trở lên.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>CHẾ ĐỘ ĐÃI NGỘ:</h3>
+                                    <ul fix>
+                                        <li>+ Làm việc trong môi trường năng động.</li>
+                                        <li>+ Lương cứng, phụ cấp, lương mềm.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>ĐỊA ĐIỂM NỘP HỒ SƠ LÀM VIỆC:</h3>
+                                    <p>Công ty TNHH Vận Tải & DVDL Hoa Mai</p>
+                                    <ul fix>
+                                        <li>Số 47 Trưng Nhị, P.1, Tp.Vũng Tàu</li>
+                                        <li>Gặp Cường – Nhân sự</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recruit_sidebar">
+                            <div class="recruit_contact">
+                                <div class="recruit_contact_title">
+                                    <h3>Thông tin liên lạc</h3>
+                                </div>
+                                <div class="recruit_contact_content">
+                                    <p>VP chính : 47 Trưng Nhị, P.1, Tp.Vũng Tàu</p>
+                                    <p>ĐT : 0853 202 203</p>
+                                    <p>Email : cuong.hoamai@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="recruit_map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.917935140701!2d107.0731100147452!3d10.348446892612804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756f9304d84f59%3A0x9f9ea790a2660ee6!2zNDcgVHLGsG5nIE5o4buLLCBQaMaw4budbmcgMSwgVGjDoG5oIHBo4buRIFbFqW5nIFThuqd1LCBCw6AgUuG7i2EgLSBWxaluZyBUw6B1IDc5MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1661231565495!5m2!1svi!2s"
+                                    style="border:0;" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recruit_wrap_2">
+                        <div class="recruit_info operate_staff">
+                            <div class="recruit_info_title">
+                                <h2>VỊ TRÍ: NHÂN VIÊN ĐIỀU PHỐI</h2>
+                                <h3>SỐ LƯỢNG: 02 NGƯỜI</h3>
+                            </div>
+                            <div class="recruit_info_content">
+                                <div>
+                                    <h3>YÊU CẦU:</h3>
+                                    <ul fix>
+                                        <li>+ Nam/nữ, từ 20 đến 28 tuổi.</li>
+                                        <li>+ nhanh nhẹn, hoạt bát, trung thực và nhiệt tình trong công việc.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>MÔ TẢ CÔNG VIỆC:</h3>
+                                    <ul fix>
+                                        <li>+ Lương thử việc 1 tháng 5.000.000đ, sẽ nâng lương theo năng lực làm việc.</li>
+                                        <li>+ Cụ thể hơn về công việc sẽ được trao đổi khi phỏng vấn và thử việc.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>THỜI GIAN LÀM VIỆC:</h3>
+                                    <p>Ca sáng:</p>
+                                    <ul fix>
+                                        <li>+ Từ 4h đến 12h</li>
+                                    </ul>
+                                    <p>Ca chiều:</p>
+                                    <ul fix>
+                                        <li>+ Từ 12h đến 19h30</li>
+                                    </ul>
+                                    <p>Trực đêm:</p>
+                                    <ul fix>
+                                        <li>+ Từ 19h30 đến 22h (phụ cấp trực đêm riêng)</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>ĐỊA ĐIỂM NỘP HỒ SƠ LÀM VIỆC:</h3>
+                                    <ul fix>
+                                        <li>Văn Phòng Công ty TNHH Toàn Thắng Số 11 Nguyễn Thái Bình, Q1, TP.HCM</li>
+                                        <li>Gặp Linh – Nhân sự</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>ĐỊA ĐIỂM LÀM VIỆC:</h3>
+                                    <ul fix>
+                                        <li>Bến xe Miền Đông, 292 Đinh Bộ Lĩnh, phường 26, Q.Bình Thạnh, Thành phố Hồ Chí Minh</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recruit_sidebar">
+                            <div class="recruit_contact">
+                                <div class="recruit_contact_title">
+                                    <h3>Thông tin liên lạc</h3>
+                                </div>
+                                <div class="recruit_contact_content">
+                                    <p>VP chính : 11 Nguyễn Thái Bình, Q1, TP.HCM</p>
+                                    <p>ĐT : 0258 473 482 </p>
+                                    <p>Fax : 0367 211 737</p>
+                                    <p>Email : tlinh.toanthang@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="recruit_map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7849.282832128739!2d107.09479207409194!3d10.370529370390797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zNDM5IGLDrG5oIGdpw6MgcC4gbmd1eeG7hW4gYW4gbmluaCB0cC4gdsWpbmcgdMOgdQ!5e0!3m2!1svi!2s!4v1661227991900!5m2!1svi!2s"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recruit_wrap_2">
+                        <div class="recruit_info tel_staff">
+                            <div class="recruit_info_title">
+                                <h2>VỊ TRÍ: NHÂN VIÊN TRỰC ĐIỆN THOẠI TỔNG ĐÀI</h2>
+                                <h3>SỐ LƯỢNG: 05 NGƯỜI</h3>
+                            </div>
+                            <div class="recruit_info_content">
+                                <div>
+                                    <h3>YÊU CẦU:</h3>
+                                    <ul fix>
+                                        <li>+ Nữ, tuổi từ 20 đến 28 tuổi</li>
+                                        <li>+ Kĩ năng giao tiếp tốt, khéo léo, biết lắng nghe và giải quyết thắc mắc của khách hàng, giao tiếp lịch sự và nhẹ nhàng khi nói chuyện, tư vấn cho khách hàng.</li>
+                                        <li>+ Hiểu biết và thông thuộc nhiều đường phố của Vũng Tàu là một lợi thế.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>MÔ TẢ CÔNG VIỆC:</h3>
+                                    <ul fix>
+                                        <li>+ Trả lời tất cả các cuộc gọi của khách hàng gọi đến, tiếp nhận thông tin khách hàng đặt xe và trả lời/ tư vấn những thắc mắc của khách hàng, để khách hàng hài lòng.</li>
+                                        <li>+ Cụ thể hơn về công việc sẽ được trao đổi khi phỏng vấn và thử việc.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>THỜI GIAN LÀM VIỆC:</h3>
+                                    <p>Vị trí 1:</p>
+                                    <ul fix>
+                                        <li>+ Làm việc theo ca, ca sáng hoặc ca chiều, xoay ca hàng ngày</li>
+                                        <li>+ Ca sáng: 4h đến 12h</li>
+                                        <li>+ Ca chiều: 12h đến 19h</li>
+                                        <li>+ Lương khởi điểm thử việc 4.500.000 đ/ tháng.</li>
+                                    </ul>
+                                    <p>Vị trí 2:</p>
+                                    <ul fix>
+                                        <li>+ Thời gian làm việc từ 18h30 đến 23h hàng ngày</li>
+                                        <li>+ Làm việc xoay ca, ngày làm ngày nghỉ.</li>
+                                        <li>+ Lương khởi điểm thử việc 2.250.000đ/ tháng</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>ĐỊA ĐIỂM NỘP HỒ SƠ LÀM VIỆC:</h3>
+                                    <p>Văn Phòng Công ty TNHH Toàn Thắng</p>
+                                    <ul fix>
+                                        <li>Số 439 Bình Giã, P.Nguyễn An Ninh, TP.Vũng Tàu</li>
+                                        <li>Gặp Nhung – Nhân sự</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>ĐỊA ĐIỂM LÀM VIỆC:</h3>
+                                    <ul fix>
+                                        <li>Văn Phòng VIP – Số 439 Bình Giã, P.Nguyễn An Ninh, TP.Vũng Tàu</li>
+                                        <li>Văn Phòng Số 16 Trưng Trắc, P.1, TP.Vũng Tàu.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recruit_sidebar">
+                            <div class="recruit_contact">
+                                <div class="recruit_contact_title">
+                                    <h3>Thông tin liên lạc</h3>
+                                </div>
+                                <div class="recruit_contact_content">
+                                    <p>VP chính : 439 Bình Giã, P.Nguyễn An Ninh, TP.Vũng Tàu</p>
+                                    <p>ĐT : 0564 713 613</p>
+                                    <p>Fax : 02543 583 434</p>
+                                    <p>Email : khanhn.toanthang@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="recruit_map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7849.282832128739!2d107.09479207409194!3d10.370529370390797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zNDM5IGLDrG5oIGdpw6MgcC4gbmd1eeG7hW4gYW4gbmluaCB0cC4gdsWpbmcgdMOgdQ!5e0!3m2!1svi!2s!4v1661227991900!5m2!1svi!2s"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="header-intro" id="hotline"> TIN TỨC VÀ REVIEWS</div>
+            <div class="news-container">
+                <div class="main-news">
+                    <div>
+                        <img src="./IMG/icon_back_col2.png" class="back-button">
+                    </div>
+                    <div class="news-images">
+                        <iframe id="news-images_id" width="100%" height="100%" src="https://www.youtube.com/embed/rcJP52uHSVU"></iframe>
+                    </div>
+                    <div>
+                        <img src="./IMG/icon_next_col2.png" class="next-button">
+                    </div>
+                </div>
+    
+                <ul fix class="slick-dot">
+                    <li class="dot-items changeColor"><button class="dot-items_button "></button></li>
+                    <li class="dot-items"><button class="dot-items_button"></button></li>
+                    <li class="dot-items"><button class="dot-items_button"></button></li>
+                    <li class="dot-items"><button class="dot-items_button"></button></li>
+                    <li class="dot-items"><button class="dot-items_button"></button></li>
+                </ul>    
+            </div>
+        </section>
+
+        <section class="partner">
+            <div class="header-intro" id="hotline"> Các đối tác của chúng tôi</div>
+            <div class="sponsor-container">
+                <div class="main-spacing">
+                    <ul class="sponsor-list">
+                        <li class="sponsor-items"> <img style=" width: 100px;" src="./IMG/Toyota.png"></li>
+                        <li class="sponsor-items"> <img style=" width: 100px;" src="./IMG/Nissan.png"></li>
+                        <li class="sponsor-items"> <img style=" width: 100px;" src="./IMG/KIA.png"></li>
+                        <li class="sponsor-items"> <img style=" width: 100px;" src="./IMG/Honda.png"></li>
+                        <li class="sponsor-items"> <img style=" width: 100px;" src="./IMG/Ford.png"></li>
+                        <li class="sponsor-items"> <img style=" width: 100px;" src="./IMG/logo-hoamai.png"></li>
+                        <li class="sponsor-items"> <img style=" width: 100px;" src="./IMG/toanthang.png"></li>
+                        <li class="sponsor-items"> <img style=" width: 100px;" src="./IMG/phuongtrang.png"></li>
+                        <li class="sponsor-items"> <img style=" width: 100px;" src="./IMG/kumbo.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="header-intro" id="hotline"> Về Chúng Tôi </div>
+            <div class="main-spacing">
+                <div class="about_us-container">
+                    <div class="about_us-introductrion">
+                        <h2> Công ty phân phối vé xe toàn quốc</h2>
+                        <ul fix class="about_us-introductrion-items">
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p1>468 Phan Văn Trị , phường 7 , Gò Vấp , TP.HCM</p1>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-headset"></i>
+                                <p1> 091 373 932</p1>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <p1>freeticketcamp@gmail.com</p1>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-globe"></i>
+                                <a href="./index.html">
+                                    <p1>www.freeticketcamp.com</p1>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="termsOfUse-container">
+                        <h2> Điều khoản của chúng tôi</h2>
+                        <ul fix>
+                            <li><a>Điều khoản chung </a> </li>
+                            <li> <a> Điều khoản giao dịch </a> </li>
+                            <li> <a> Chính sách thanh toán</a> </li>
+                            <li> Chính sách bảo mật</li>
+                            <li> Câu hỏi thường gặp</li>
+                        </ul>
+                    </div>
+
+                    <div class="privilege-container">
+                        <h2> Đặc quyền khách hàng</h2>
+                        <ul fix>
+                            <li> Đăng kí thẻ thành viên</li>
+                            <li>Tra cứu mã tích điểm</li>
+                            <li> Đăng kí thanh toán với
+                                <span style="color: red;">MOMO </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <div class="social_media-container">
+                        <h2> Kết nối với chúng tôi </h2>
+                        <ul fix class="social_media-list">
+                            <li> <i class="fa-brands fa-facebook-square"></i></li>
+                            <li> <i class="fa-brands fa-youtube"></i></li>
+                            <li> <i class="fa-brands fa-twitter"></i></li>
+                        </ul>
+                        <div> <img style="width:150px;" src="./IMG/bo-cong-thuong-dtb.png"></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- scroll top button  -->
+        <a class="fas fa-angle-up" id="scroll-top"></a>
+
+        <!-- Loading -->
+        <div class="loader-container">
+            <img src="./IMG/loading.gif" alt="">
+        </div>
+
+        <!-- Link JS -->
+        <script type="text/javascript" src="./script.js"></script>
+
+    </div>
+</body>
+
+</html>
